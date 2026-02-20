@@ -12,4 +12,14 @@ app.use(cors({
     app.use(express.static("public"))
     app.use(cookieParser()) 
 
+//* Routes import 
+import userRouter from './routes/user.routes.js'
+
+//* Routes Declaration
+app.use("/api/v1/users",userRouter) 
+
+app.get("/", (req, res) => {
+    res.send("Server working");
+});
+
 export { app }
