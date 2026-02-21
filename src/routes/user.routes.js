@@ -1,3 +1,4 @@
+console.log("USER ROUTES FILE LOADED");
 import { Router } from "express";
 import { registerUser } from "../controllers/user.controller.js";
 
